@@ -1,0 +1,39 @@
+
+
+
+.main{
+   
+  height:680px;
+}
+.main{
+background-image: url('/assets/img/home1.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+}
+main_button{
+  width:120px; height:40px; border-radius: 20px; box-shadow:0 3px 4px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.head{
+letter-spacing: 2px;
+}
+.jumbotron{
+  margin-top:150px;
+  font-size: 45px;
+  width:550px;
+  margin-left:80px;
+   font-weight: bold;
+     text-align:left;
+      background: transparent;
+}
+
+.example-card {
+  max-width: 400px;
+ 
+}
+
+.example-header-image {
+  
+ 
+  background-size: cover;
+}
+

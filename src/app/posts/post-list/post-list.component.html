@@ -1,0 +1,27 @@
+
+<br><br><br>
+
+
+ <h3 style="color:#FF7458; margin-left:30px;">Recent Books Added</h3>
+  <section>
+  <div style="width:290px;  display:inline-block; margin:0 20px; margin-top:50px; box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19); "   *ngFor="let post of posts" >
+    
+    <div class="card-body" style="padding:5px;">
+      <br>
+      <h6 class="my-0 font-weight-bold">{{ post.title }}</h6>
+      <br>
+      <img mat-card-image [src]="post.imagePath" [alt]="post.title" style="width:270px; margin:auto; height:300px;">
+      <p > <span style="font-weight: bold; color:#FF7458;">AUTHOR  </span>  -  {{ post.author }}</p>
+      <p><span style="font-weight: bold; color:#FF7458;">GENRE     </span>  -  {{ post.genre}}</p>
+      <p><span style="font-weight: bold; color:#FF7458;">LANGUAGE  </span>  -  {{ post.language }}</p>
+      <a type="button" class="btn btn-lg btn-block btn-outline-danger"  href={{post.bookPath}} style="width:150px; height:40px; padding:5px; font-size:17px"  >Read book</a>
+      <a mat-button color="primary" [routerLink]="['/edit', post.id]">EDIT</a>
+      <button mat-button color="warn" (click)="onDelete(post.id)">DELETE</button>
+     
+    </div>
+  
+  </div>
+ 
+
+</section>
+

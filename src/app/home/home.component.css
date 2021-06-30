@@ -1,0 +1,400 @@
+mat-form-field,
+textarea {
+  width: 100%;
+}
+
+mat-spinner {
+  margin: auto;
+}
+
+input[type="file"] {
+  visibility: hidden;
+}
+
+.image-preview {
+  height: 5rem;
+  margin: 1rem 0;
+}
+
+.image-preview img {
+  height: 100%;
+}
+
+
+
+
+
+
+
+
+  .parallax {
+    /* The image used */
+    background-image: url('/assets/img/home1.jpg');
+  
+    /* Set a specific height */
+    height: 700px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+ 
+  main_button{
+    width:120px; height:40px; border-radius: 20px; box-shadow:0 3px 4px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+  }
+  .head{
+  letter-spacing: 2px;
+  }
+  .jumbotron{
+    margin-top:150px;
+    font-size: 45px;
+    width:550px;
+    margin-left:80px;
+     font-weight: bold;
+       text-align:left;
+        background: transparent;
+  }
+
+
+
+  .genres{
+    margin-top:100px;
+    margin-left:60px;
+  }
+  
+  .team-area{
+    padding-top: 5%;
+   
+    margin:auto;
+  }
+  .single-team{
+    background-color:#ff7458;
+    
+    width:80%;
+     text-align: center;
+    margin:auto;
+    margin-bottom: 5px;
+  }
+  .single-team:hover{
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+  }
+  .single-team:hover .social{
+    cursor: pointer;
+    opacity: 1;
+    transform: rotateY(0deg) scale(1, 1);
+  }
+  .img-area1{
+    background-image: url('/assets/img/tamil2.jpg');
+    background-size: cover;
+    height:300px;
+    overflow: hidden;
+    position: relative;
+  }
+  .img-area1 img{
+    width: 100%;
+  }
+  .img-area1:hover img{
+    transform: scale(1.2)
+  }
+  .img-area1 img{
+    transition: all 0.4s ease 0s;
+  }
+  @media (max-width: 768px){
+    .img-area1 img{
+        display: inline-block;
+    }
+  }
+  .img-area1 .social{
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: .5s;
+    transform: rotateY(180deg) scale(0.5, 0.5);
+  }
+  
+  
+  
+  .img-area2{
+    background-image: url('/assets/img/english.jpg');
+    background-size: cover;
+    height:300px;
+    overflow: hidden;
+    position: relative;
+  }
+  .img-area2 img{
+    width: 100%;
+  }
+  .img-area2:hover img{
+    transform: scale(1.2)
+  }
+  .img-area2 img{
+    transition: all 0.4s ease 0s;
+  }
+  @media (max-width: 768px){
+    .img-area1 img{
+        display: inline-block;
+    }
+  }
+  .img-area2 .social{
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: .5s;
+    transform: rotateY(180deg) scale(0.5, 0.5);
+  }
+  
+  
+  
+  .img-area3{
+    background-image: url('/assets/img/mala.jpg');
+    background-size: cover;
+    height:300px;
+    overflow: hidden;
+    position: relative;
+  }
+  .img-area3 img{
+    width: 100%;
+  }
+  .img-area3:hover img{
+    transform: scale(1.2)
+  }
+  .img-area3 img{
+    transition: all 0.4s ease 0s;
+  }
+  @media (max-width: 768px){
+    .img-area3 img{
+        display: inline-block;
+    }
+  }
+  .img-area3 .social{
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: .5s;
+    transform: rotateY(180deg) scale(0.5, 0.5);
+  }
+  
+  .img-area4{
+    background-image: url('/assets/img/tel.jpg');
+    background-size: cover;
+    height:300px;
+    overflow: hidden;
+    position: relative;
+  }
+  .img-area4 img{
+    width: 100%;
+  }
+  .img-area4:hover img{
+    transform: scale(1.2)
+  }
+  .img-area4 img{
+    transition: all 0.4s ease 0s;
+  }
+  @media (max-width: 768px){
+    .img-area4 img{
+        display: inline-block;
+    }
+  }
+  .img-area4 .social{
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: .5s;
+    transform: rotateY(180deg) scale(0.5, 0.5);
+  }
+  
+  
+  
+  .img-area5{
+    background-image: url('/assets/img/genre-7.png');
+    background-size: cover;
+    height:300px;
+    overflow: hidden;
+    position: relative;
+  }
+  .img-area5 img{
+    width: 100%;
+  }
+  .img-area5:hover img{
+    transform: scale(1.2)
+  }
+  .img-area5 img{
+    transition: all 0.4s ease 0s;
+  }
+  @media (max-width: 768px){
+    .img-area5 img{
+        display: inline-block;
+    }
+  }
+  .img-area5 .social{
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: .5s;
+    transform: rotateY(180deg) scale(0.5, 0.5);
+  }
+  
+  .img-area6{
+    background-image: url('/assets/img/genre-8.png');
+    background-size: cover;
+    height:300px;
+    overflow: hidden;
+    position: relative;
+  }
+  .img-area6 img{
+    width: 100%;
+  }
+  .img-area6:hover img{
+    transform: scale(1.2)
+  }
+  .img-area6 img{
+    transition: all 0.4s ease 0s;
+  }
+  @media (max-width: 768px){
+    .img-area6 img{
+        display: inline-block;
+    }
+  }
+  .img-area6 .social{
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: .5s;
+    transform: rotateY(180deg) scale(0.5, 0.5);
+  }
+  
+  
+  
+  
+  .img-area7{
+    background-image: url('/assets/img/genre-10.png');
+    background-size: cover;
+    height:300px;
+    overflow: hidden;
+    position: relative;
+  }
+  .img-area7 img{
+    width: 100%;
+  }
+  .img-area7:hover img{
+    transform: scale(1.2)
+  }
+  .img-area7 img{
+    transition: all 0.4s ease 0s;
+  }
+  @media (max-width: 768px){
+    .img-area7 img{
+        display: inline-block;
+    }
+  }
+  .img-area7 .social{
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: .5s;
+    transform: rotateY(180deg) scale(0.5, 0.5);
+  }
+  
+  
+  
+  .img-area8{
+    background-image: url('/assets/img/genre-12.png');
+    background-size: cover;
+    height:300px;
+    overflow: hidden;
+    position: relative;
+  }
+  .img-area8 img{
+    width: 100%;
+  }
+  .img-area8:hover img{
+    transform: scale(1.2)
+  }
+  .img-area8 img{
+    transition: all 0.4s ease 0s;
+  }
+  @media (max-width: 768px){
+    .img-area8 img{
+        display: inline-block;
+    }
+  }
+  .img-area8 .social{
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: .5s;
+    transform: rotateY(180deg) scale(0.5, 0.5);
+  }
+  
+  .img-text{
+    padding: 15px;
+    color:white;
+    text-align: center;
+  }
+  .img-text h5{
+    margin: 0 0 5px;
+    font-size: 14px;
+    font-family: bignoodletitling;
+    letter-spacing: 4px;
+  }
+  
+  /* ignore the code below */
+  
+  
+  .link-area
+  {
+  position:fixed;
+  bottom:20px;
+  left:20px;  
+  padding:15px;
+  border-radius:40px;
+  background:tomato;
+  }
+  .link-area a
+  {
+  text-decoration:none;
+  color:#fff;
+  font-size:25px;
+  }

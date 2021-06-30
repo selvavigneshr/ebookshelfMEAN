@@ -1,0 +1,56 @@
+<div class="container-fluid" style="background-color:#f1f1f1">
+
+
+<br><br>
+<nav aria-label="breadcrumb" style="background:transparent;">
+    <ol class="breadcrumb" style="background:transparent;  margin-left:20px;">
+      <li class="breadcrumb-item"><a href="#"><b>Genres</b></a></li>
+      <li class="breadcrumb-item active" aria-current="page" style="color:#FF7458;"><b>Science</b></li>
+    </ol>
+  </nav>
+  <br><br>
+<div class="container">
+    <br>
+    <h3 style="color:#FF7458; ">Books Added Recently</h3>
+  
+     <br>
+     <mat-form-field style="margin:auto">
+      <mat-label>Search by language</mat-label>
+      <input matInput  placeholder="Search by language ">
+    </mat-form-field>
+     <br>
+
+</div>
+
+<div class="container" *ngFor="let post of posts">
+  <div class="row" style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); margin-top:50px; padding:10px; background-color: white;">
+
+
+  <div class="col-sm-4" >
+   <br><br>
+    <img mat-card-image [src]="post.imagePath" [alt]="post.title" style="width:200px; margin:auto; height:260px;">
+    <h6 style="font-weight: bold;color:#FF7458; margin-top:15px;"> {{ post.title }}</h6>
+  </div> 
+ 
+  <div class="col-md-8">
+    <br>
+  
+    <h5 style="margin-top:10px; font-weight:bold; margin-left:0px;">About the book</h5>
+    <br>
+    
+    <h6 style="font-weight: bold; color:#FF7458;">Author  - {{ post.author }}</h6>
+  <br>
+  <a type="button" class="btn btn-lg btn-block btn-outline-danger"  href={{post.bookPath}} style=" margin-bottom:10px; width:150px; height:40px; padding:5px; font-size:17px"  >Read book</a> 
+  <p>{{ post.language }}</p>
+    <p > {{ post.content }} </p>
+  </div>
+</div>
+  
+</div>
+</div>
+  
+
+
+
+
+

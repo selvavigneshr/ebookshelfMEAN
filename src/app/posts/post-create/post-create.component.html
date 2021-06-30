@@ -1,0 +1,69 @@
+
+
+<br><br><br>
+<div class="container">
+ <br>
+ 
+ <br><br>
+  <mat-card>
+    <br>
+    <h4 style=" font-weight: bold;">Book post</h4>
+    <br>
+    <mat-spinner *ngIf="isLoading"></mat-spinner>
+    <form [formGroup]="form" (submit)="onSavePost()" *ngIf="!isLoading">
+      <mat-form-field>
+        <input matInput type="text" formControlName="title" placeholder="Book Title">
+        <mat-error *ngIf="form.get('title').invalid">Please enter a post title.</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput type="text" formControlName="author" placeholder="Author Name">
+        <mat-error *ngIf="form.get('author').invalid">Please enter a post title.</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput type="text" formControlName="language" placeholder="Language">
+        <mat-error *ngIf="form.get('language').invalid">Please enter a post title.</mat-error>
+      </mat-form-field>
+      <div>
+        <button mat-stroked-button type="button" (click)="filePicker.click()">Cover Image</button>
+        <input type="file" #filePicker (change)="onImagePicked($event)"  >
+      </div>
+      <div class="image-preview" *ngIf="imagePreview !== '' && imagePreview && form.get('image').valid">
+        <img [src]="imagePreview" [alt]="form.value.title">
+      </div>
+
+      
+      
+    
+
+      <mat-form-field>
+        <input matInput type="text" formControlName="genre" placeholder="Genres">
+        <mat-error *ngIf="form.get('genre').invalid">Please enter Price of the prodcut.</mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <textarea matInput rows="4" formControlName="content" placeholder="Description "></textarea>
+        <mat-error *ngIf="form.get('content').invalid">Please enter a post title.</mat-error>
+      </mat-form-field>
+
+      <div>
+        <button mat-stroked-button type="button" (click)="filePicker1.click()">Upload Books</button>
+        <input type="file" #filePicker1 (change)="onpdfPicked($event)" >
+      </div>
+      <br>
+      <button mat-raised-button color="accent" type="submit"> Post Book</button>
+      <br>
+    </form>
+
+  </mat-card>
+
+
+</div>
+
+<br><br>
+
+
+
+
+
+
+

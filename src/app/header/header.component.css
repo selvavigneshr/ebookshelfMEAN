@@ -1,0 +1,15 @@
+#myNavbar{
+  background-color: #FF7458;
+  
+  padding:20px;
+}
+#myNavbar .navbar-nav .nav-item .nav-link{
+
+  color:white;
+
+
+}
+.navbar-brand{
+  
+  color:white;
+}

@@ -1,0 +1,47 @@
+
+
+
+
+
+<nav class="navbar navbar-light  navbar-expand-lg" id="myNavbar">
+ 
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+   <span class="navbar-toggler-icon"></span>
+  </button>
+  
+  <a href="#" class="navbar-brand"><b>E-BOOK SHELF</b></a>
+  <div class="collapse navbar-collapse" id="mainNav">
+   <ul class="navbar-nav ml-auto nav-fill">
+    
+    <li class="nav-item px-4" >
+     <a routerLink="/" routerLinkActive="active" class="nav-link  active">Home <span class="sr-only">(current)</span></a>
+    </li>
+    <li class="nav-item px-4" *ngIf="userIsAuthenticated" >
+      <a routerLink="/dashboard"  routerLinkActive="active" class="nav-link">Dashboard</a>
+     </li>
+    <li class="nav-item px-4" *ngIf="userIsAuthenticated">
+      <a routerLink="/create" routerLinkActive="active" class="nav-link  active">Publish <span class="sr-only">(current)</span></a>
+     </li>
+     <li class="nav-item px-4"   >
+      <a routerLink="/genre"  routerLinkActive="active" class="nav-link" >All Genres</a>
+     </li>
+    
+    
+    
+   
+   
+   
+    
+   
+    <li *ngIf="userIsAuthenticated">
+      <button mat-button (click)="onLogout()" style="color:white;">Logout</button>
+    </li>
+   </ul>
+  </div>
+ </nav>
+
+
+
+
+
+
